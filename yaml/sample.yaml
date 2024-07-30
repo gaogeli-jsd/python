@@ -1,0 +1,7 @@
+settings:
+  language: jp
+
+option:
+  account:
+    max: 100
+    min: 50

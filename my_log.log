@@ -1,0 +1,5 @@
+2024-07-17 15:29:40,421 - __main__ - DEBUG - Debugging information
+2024-07-17 15:29:40,421 - __main__ - INFO - Informational message
+2024-07-17 15:29:40,422 - __main__ - WARNING - Warning:config file server.conf not found
+2024-07-17 15:29:40,422 - __main__ - ERROR - Error occurred
+2024-07-17 15:29:40,422 - __main__ - CRITICAL - Critical error -- shutting down

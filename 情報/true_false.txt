@@ -1,0 +1,12 @@
+
+In Python, like in C, 
+any non-zero integer value is true; 
+zero is false.
+
+comparison operators are written the same as in C: 
+< (less than), 
+> (greater than), 
+== (equal to), 
+<= (less than or equal to), 
+>= (greater than or equal to) and 
+!= (not equal to).

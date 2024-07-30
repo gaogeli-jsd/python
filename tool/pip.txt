@@ -1,0 +1,14 @@
+pip - パッケージ管理
+Python関連のパッケージ(ツールやライブラリ)を管理します。
+ここで紹介する pip 以外のツールは、
+いずれも 「pip install ツール名」で簡単にインストールできるものです。
+Python 3系の場合は pip3 という名前の場合があります。
+
+Shell
+# pip install package_name     // パッケージをインストールする
+# pip uninstall package_name   // パッケージをアンインストールする
+# pip search package_name      // リポジトリからパッケージを探す
+# pip list                     // インストール済みパッケージを表示する
+
+
+pip install requests

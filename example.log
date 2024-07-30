@@ -1,0 +1,5 @@
+[DEBUG] This is DEBUG message.
+[INFO] This is INFO message.
+[WARNING] This is WARNING message.
+[ERROR] This is ERROR message.
+[CRITICAL] This is CRITICAL message.

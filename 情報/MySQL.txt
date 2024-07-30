@@ -1,0 +1,12 @@
+c:\kou\study\python>pip install mysql-connector-python
+Collecting mysql-connector-python
+  Downloading mysql_connector_python-9.0.0-cp312-cp312-win_amd64.whl.metadata (2.0 kB)
+Downloading mysql_connector_python-9.0.0-cp312-cp312-win_amd64.whl (14.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.3/14.3 MB 12.6 MB/s eta 0:00:00
+Installing collected packages: mysql-connector-python
+Successfully installed mysql-connector-python-9.0.0
+
+[notice] A new release of pip is available: 24.0 -> 24.1.2
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+c:\kou\study\python>

@@ -1,0 +1,39 @@
+ドキュメントストリングはまた、対話モードで使用される help() でも参照されます。
+
+C:\kou\study\python\var>py
+Python 3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import mymod
+>>> help(mymod)
+Help on module mymod:
+
+NAME
+    mymod - A sample module
+
+CLASSES
+    builtins.object
+        MyClass
+
+    class MyClass(builtins.object)
+     |  A sample class
+     |
+     |  Methods defined here:
+     |
+     |  myfunc(self, x, y)
+     |      A sample function
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  __dict__
+     |      dictionary for instance variables
+     |
+     |  __weakref__
+     |      list of weak references to the object
+
+FILE
+    c:\kou\study\python\var\mymod.py
+
+
+>>>
+>>>
