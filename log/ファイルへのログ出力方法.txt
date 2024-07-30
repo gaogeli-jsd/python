@@ -1,0 +1,18 @@
+ファイルへのログ出力方法（追記モードと上書きモード）
+ログメッセージをファイルに出力するには、FileHandlerを使用します。
+
+FileHandlerは初期化時に出力先のファイル名を引数として取ります。
+
+また、第二引数にはファイルの開き方を指定することができ、’a’を指定すると追記モード、’w’を指定すると上書きモードになります。
+
+以下に例を示します。
+
+logger = logging.getLogger(__name__)
+handler = logging.FileHandler('my_log.log', 'a')
+logger.addHandler(handler)
+logger.warning('This is a warning message')
+「This is a warning message」というメッセージがmy_log.logという名前のファイルに出力。
+
+第二引数で’a’を指定しているため、同じコードを何度も実行しても、メッセージはファイルに追記されていきます。
+
+‘w’を指定した場合は、コードを実行するたびにファイルが上書きされます。

@@ -1,0 +1,13 @@
+下記のパラメータを指定できます。
+
+filename	# 出力先ファイル名
+filemode	# ファイル出力モード。(デフォルト:filemode='a')
+stream		# 出力先ストリーム。(デフォルト:stream=sys.stderr)
+format		# 出力フォーマット。(詳細)(デフォルト:format='%(levelname)s:%(name)s:%(message)s')
+datefmt		# 日付フォーマット
+level		# 出力レベル。(デフォルト:level=logging.WARNING)
+style		# フォーマットスタイル。(デフォルト: style='%')
+handlers	# 出力ハンドラリスト。
+force		# force=Trueを指定すると利用前に全ハンドラが一度クローズされる。
+encoding	# エンコーディングルール。encoding='utf-8'など
+errors		# エンコードに失敗した場合のふるまい。(詳細)

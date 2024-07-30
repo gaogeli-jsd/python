@@ -1,0 +1,10 @@
+
+    ロガーのカスタマイズ
+
+ロガーをカスタマイズするには下記のような YAML ファイル(config.yaml)を用意します。
+"exampleLogger" というロガー名で生成されたロガーは、
+"console" と "file" というふたつのハンドラにログを出力します。
+"console" ハンドラは StreamHandler で標準出力に、
+"file" ハンドラは FileHandler で /var/log/myapp/myapp.log にログを書き出します。
+フォーマットはいずれも "simple" フォーマッタで定義されたものを使用します。
+"exampleLogger 以外の名前で作成されたロガーは "root" の定義に従います。

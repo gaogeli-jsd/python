@@ -1,0 +1,33 @@
+
+ログフォーマットの要素
+ログフォーマットは一般的に、以下で構成されます。
+
+日付
+時間
+ログレベル
+メッセージ
+発生源のファイル名
+これらの要素は必要に応じて自由に組み合わせられ、それぞれが異なる情報を提供してプログラムの動作を理解しやすくします。
+
+
+ログフォーマットの設定方法
+ Pythonのloggingモジュールでは、ログフォーマットを設定するためのFormatterクラスが提供されています。
+
+Formatterクラスにより、自由な形式でログメッセージが作成可能。
+
+以下に例を示します。
+
+logger = logging.getLogger(__name__)
+handler = logging.StreamHandler()
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+logger.addHandler(handler)
+logger.warning('This is a warning message')
+出力は以下のとおりです。
+
+2023-07-28 12:34:56,789 - __main__ - WARNING - This is a warning message
+%(asctime)s：出力時刻、
+%(name)s：ロガーの名前
+%(levelname)s：ログレベル
+%(message)s：ログメッセージ
+自由に組み合わせられるので、多くの属性がloggingモジュールによって提供されています。

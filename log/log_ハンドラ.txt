@@ -1,0 +1,21 @@
+
+    ハンドラ
+
+標準では下記のハンドラが用意されています。
+個々のハンドラはスレッドセーフで、
+複数スレッドのロギングが互いを邪魔することはありません。
+
+StreamHandler			    # ストリームハンドラ。sys.stdoutなど
+FileHandler			        # ファイルハンドラ
+RotatingFileHandler		    # ローテートファイルハンドラ
+TimedRotatingFileHandler	# 時間ローテートファイルハンドラ
+SocketHandler			    # TCPソケットハンドラ
+DatagramHandler			    # UDPソケットハンドラ
+SMTPHandler			        # SMTPハンドラ
+SysLogHandler			    # Syslogハンドラ
+NTEventLogHandler		    # Windows NTイベントハンドラ
+MemoryHandler			    # メモリハンドラ
+HTTPHandler			        # HTTPハンドラ
+WatchedFileHandler		    # 監視ファイルハンドラ。ファイルが変更を監視し変更時は開きなおす
+QueueHandler			    # キューハンドラ。queueモジュールなど
+NullHandler			        # ヌルハンドラ。ログを読み捨てる

@@ -1,0 +1,10 @@
+標準出力へのログ出力方法
+先ほどのハンドラオブジェクトの設定の例では、StreamHandlerを使用してログメッセージを標準出力に出力しました。
+
+これは一番基本的なログの出力方法であり、 デバッグ時などによく使われます。
+
+logger = logging.getLogger(__name__)
+handler = logging.StreamHandler()
+logger.addHandler(handler)
+logger.warning('This is a warning message')
+上記のコードを実行すると、「This is a warning message」というメッセージがコンソールに出力されます。
