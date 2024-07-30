@@ -1,0 +1,6 @@
+pylint - コーディングチェッカ
+Python プログラムを解析し、バグの原因となりそうな箇所をチェックします。
+
+Shell
+# pip install pylint                  // pylint をインストールする
+$ pylint ./src                        // ./src 配下のソースをチェックする
