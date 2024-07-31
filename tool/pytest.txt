@@ -1,0 +1,18 @@
+pytest - ユニットテスト
+シンプルなユニットテスト(単体テスト)ツールです。まず、テストプログラムを記述します。assert 文でテストの内容を記述します。
+
+test_case1.py
+def test_case1():
+    ret = add(3, 5)
+    assert ret == 8
+下記の様に実行します。test_*.py にマッチするファイルの test で始まる関数、および、Test で始まるクラスの test で始まるメソッドが実行の対象となります。
+
+sample.py
+$ pip install pytest                  // pytest をインストールする
+$ pytest ./tests                      // tests フォルダ配下の単体テストを実行する
+============= FAILURES ===============
+def test_case1():
+    ret = add(3, 5)
+>   assert ret == 8
+E   assert 10 == 8
+========== 1 failed in 0.08s =========
