@@ -1,0 +1,17 @@
+coverage - ユニットテストの網羅度チェック
+unittest のテスト網羅度を集計します。
+
+Shell
+$ pip install coverage                          // coverage をインストールする
+$ coverage run --append ./tests/test_case1.py   // テスト1を実行する
+$ coverage run --append ./tests/test_case2.py   // テスト2を実行する
+$ coverage report -m                            // テスト結果(.coverage)をレポートする
+Name                  Stmts   Miss  Cover   Missing
+---------------------------------------------------
+lib/calc.py              10      1    90%   11
+tests/test_case1.py      11      0   100%
+tests/test_case2.py      11      0   100%
+---------------------------------------------------
+TOTAL                    32      1    97%
+$ coverage html                                 // HTMLレポート(.htmlcov)を生成する
+$ coverage erase                                // テスト結果(.coverage)を削除する
